@@ -14,8 +14,9 @@ def pearson(s1,s2):
         similarity = 1
     elif isnan(similarity):
         similarity = 0
+   return(similarity)
 
-def stab_index(A,sim):
+def stab_index(A,pearson):
     """ Computes the average pairwise similarities between the rows of A """
     M = size(A,1)
     stability = 0
@@ -24,3 +25,4 @@ def stab_index(A,sim):
             if i != j:
                 stability = stability + sim(A[i], A[j:])
     stability = stability/(M*(M-1))
+    return(stability)
