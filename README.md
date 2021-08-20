@@ -39,7 +39,7 @@ We then combine those LD-groups into common shared LD-groups for both subpopulat
 **MuGLasso** is a multitask approach that performs feature selection at the LD-groups level using group Lasso. The input tasks correspond to subpopulations (*two tasks in our simulations case: for CEU and YRI*).
 
 #### Architecture 
-![Image description](/images/MuGLasso.png)
+![Image description](/Images/MuGLasso.jpg)
 
 #### Problem formulation and implementation
 The problem is reformulated as a group Lasso with G groups each containing T copies (one per task) of the features of SNPs group.
