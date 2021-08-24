@@ -20,7 +20,7 @@ adjclust <- function(bed = 'data.bed', bim = 'data.bim', fam = 'data.fam')
 	# Adjacency-constrained Hierarchical Agglomerative Clustering
 
 	fit <- snpClust(genotype, stats = "R.squared")
-  sel_clust <- select(fit)
+  	sel_clust <- select(fit)
   
 	# Save LD-groups labels for further analysis 
 	saveRDS(sel_clust, file = "LD_groups.rds")
