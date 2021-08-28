@@ -6,7 +6,7 @@ import pandas as pd
 def input_matrix(data, n_tasks, n_samples, n_samples_per_task, n_features):
 
 	"""
-	Design input matrix for the Multi-task group Lasso algorithm (MutagLo)
+	Design input matrix for the Multi-task group Lasso algorithm (MuGLAsso)
 
 
 	Args:
@@ -19,7 +19,7 @@ def input_matrix(data, n_tasks, n_samples, n_samples_per_task, n_features):
 		
 	Returns:
 
-		X_mt : the input matrix in MutagLo format
+		X_mt : the input matrix in MuGLasso format
 	"""
 
 	data = pd.read_csv(data, delim_whitespace=True)
