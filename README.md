@@ -1,7 +1,7 @@
 # MuGLasso_GWAS
-This repository is an implementation of MuGLasso applied to GWAS, the method is presented in the paper [Multitask group Lasso for Genome Wide association Studies in admixed populations](https://www.biorxiv.org/content/10.1101/2021.08.02.454499v1.full.pdf).
+This repository is an implementation of MuGLasso applied to GWAS, the method is presented in the paper [Multitask group Lasso for Genome Wide association Studies in diverse populations](https://www.biorxiv.org/content/10.1101/2021.08.02.454499v2.full.pdf).
 ## Simulated data 
-We used [GWAsimulator](https://biostat.app.vumc.org/GWAsimulator) tool to generate simulated GWAS data of admixed populations (CEU and YRI) in plink format.
+We used [GWAsimulator](https://biostat.app.vumc.org/GWAsimulator) tool to generate simulated GWAS data of diverse populations (CEU and YRI) in plink format.
 Here are the following steps: 
 - Prepare the input control files, we used ```Files/control_CEU.txt``` and ```Files/control_YRI.txt``` to obtain the used dataset in the paper.
 - Prepare the input reference data in phased format (to specify in the first line in the controls file). In our case, we used HapMap3 for both subpopulations (CEU and YRI) as input reference for GWAsimulator, it could be downloaded in: https://ftp.ncbi.nlm.nih.gov/hapmap/genotypes/2010-05_phaseIII/.
