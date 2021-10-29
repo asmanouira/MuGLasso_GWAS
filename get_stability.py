@@ -23,6 +23,6 @@ def stab_index(A,pearson):
     for i in range(len(M)):
         for j in range(len(M)):
             if i != j:
-                stability = stability + sim(A[i], A[j:])
+                stability = stability + pearson(A[i], A[j:])
     stability = stability/(M*(M-1))
     return(stability)
